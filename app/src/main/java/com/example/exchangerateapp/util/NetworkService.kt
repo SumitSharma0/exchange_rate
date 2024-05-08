@@ -1,6 +1,5 @@
 package com.example.exchangerateapp.util
 
-import com.example.exchangerateapp.BuildConfig
 import com.example.exchangerateapp.data.response.ErrorResponse
 import com.example.exchangerateapp.data.response.ExchangeRatesResponse
 import io.ktor.client.HttpClient
@@ -26,7 +25,9 @@ class NetworkService @Inject constructor(
 )  {
 
     companion object {
-        const val APP_ID = BuildConfig.api_key
+
+        const val APP_ID = ""//BuildConfig.api_key
+
         private const val URL = "https://openexchangerates.org/api/"
     }
 
